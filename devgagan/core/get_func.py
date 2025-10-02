@@ -201,7 +201,7 @@ class ProgressManager:
         return (
             f"╭──────────────────╮\n"
             f"│     **__{uploader} STRANGER⚡ Uploader__**\n"
-            f"├--─STRANGER───\n"
+            f"├──STRANGER───\n"
             f"│ {progress_bar}\n\n"
             f"│ **__Progress:__** {percent:.2f}%\n"
             f"│ **__Done:__** {done_mb:.2f} MB / {total_mb:.2f} MB\n"
@@ -650,7 +650,7 @@ class SmartTelegramBot:
             # Download file
             edit_msg = await app.edit_message_text(sender, edit_id, "**...STRANGER 📥 Downloader...**")
             
-            progress_args = ("╭──────────────╮\n│ **_STRANGE_Downloading...__**\n├────────", edit_msg, time.time())
+            progress_args = ("╭──────────────╮\n│ **__STRANGER Downloading...__**\n├────────", edit_msg, time.time())
             file_path = await userbot.download_media(
                 msg, file_name=filename, progress=progress_bar, progress_args=progress_args
             )
