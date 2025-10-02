@@ -244,7 +244,7 @@ async def progress_callback(current, total, progress_message):
         total_mb = total / (1024 * 1024)      
         await progress_message.edit(
     f"╭──────────────────╮\n"
-    f"│        **STRANGER__Uploader...__**       \n"
+    f"│**STRANGER__Uploader...__**\n"
     f"├───STRANGER───\n"
     f"│ {progress_bar}\n\n"
     f"│ **__Progress:__** {percent:.2f}%\n"
